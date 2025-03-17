@@ -12,6 +12,7 @@ Each postmortem includes:
 ## 📂 Repository Structure  
 Each incident is stored in a separate folder under `incidents/`, containing:  
 
+```
 DevOps-Postmortems/
 │── incidents/
 │   ├── /
@@ -20,6 +21,7 @@ DevOps-Postmortems/
 │   │   │   ├── service-before-fix.log
 │   │   │   ├── service-after-fix.log
 │── README.md                     # This repo-level README
+```
 
 ## 📌 How to Use This Repo  
 - 📖 **Learn from past incidents** to improve your troubleshooting skills.  
