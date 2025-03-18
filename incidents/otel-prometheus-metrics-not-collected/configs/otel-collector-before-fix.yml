@@ -1,0 +1,26 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: "0.0.0.0:4317"  # Accepts traces from both local and Docker
+      http:
+        endpoint: "0.0.0.0:4318"  # Accepts HTTP traces
+
+exporters:
+  debug:
+  otlp:
+    endpoint: "http://jaeger:4317"
+    tls:
+      insecure: true
+  prometheus:
+    endpoint: "0.0.0.0:9464"  # Prometheus will scrape from this
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      exporters: [debug, otlp]
+
+    metrics:  # 🚀 NEW: Enable metrics pipeline
+      receivers: [otlp]
+      exporters: [prometheus]

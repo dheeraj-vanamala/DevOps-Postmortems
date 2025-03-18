@@ -1,0 +1,15 @@
+2025-03-18T08:06:06.121Z	info	service@v0.121.0/service.go:193	Setting up own telemetry...
+2025-03-18T08:06:06.121Z	info	builders/builders.go:26	Development component. May change in the future.	{"otelcol.component.id": "debug", "otelcol.component.kind": "Exporter", "otelcol.signal": "traces"}
+2025-03-18T08:06:06.121Z	info	service@v0.121.0/service.go:258	Starting otelcol-contrib...	{"Version": "0.121.0", "NumCPU": 8}
+2025-03-18T08:06:06.121Z	info	extensions/extensions.go:40	Starting extensions...
+2025-03-18T08:06:06.122Z	info	otlpreceiver@v0.121.0/otlp.go:116	Starting GRPC server	{"otelcol.component.id": "otlp", "otelcol.component.kind": "Receiver", "endpoint": "0.0.0.0:4317"}
+2025-03-18T08:06:06.122Z	info	otlpreceiver@v0.121.0/otlp.go:173	Starting HTTP server	{"otelcol.component.id": "otlp", "otelcol.component.kind": "Receiver", "endpoint": "0.0.0.0:4318"}
+2025-03-18T08:06:06.122Z	info	service@v0.121.0/service.go:281	Everything is ready. Begin running and processing data.
+2025-03-18T08:06:15.262Z	info	Traces	{"otelcol.component.id": "debug", "otelcol.component.kind": "Exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 1}
+2025-03-18T08:06:18.479Z	info	Traces	{"otelcol.component.id": "debug", "otelcol.component.kind": "Exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 1}
+2025-03-18T08:06:25.264Z	info	Traces	{"otelcol.component.id": "debug", "otelcol.component.kind": "Exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 1}
+2025-03-18T08:06:28.482Z	info	Traces	{"otelcol.component.id": "debug", "otelcol.component.kind": "Exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 3}
+2025-03-18T08:06:30.267Z	info	Traces	{"otelcol.component.id": "debug", "otelcol.component.kind": "Exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 2}
+2025-03-18T08:06:33.483Z	info	Traces	{"otelcol.component.id": "debug", "otelcol.component.kind": "Exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 1}
+2025-03-18T08:06:35.268Z	info	Traces	{"otelcol.component.id": "debug", "otelcol.component.kind": "Exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 3}
+2025-03-18T08:06:38.488Z	info	Traces	{"otelcol.component.id": "debug", "otelcol.component.kind": "Exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 2}
